@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campus Life - Events</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Shared nav (same as index, but Events active) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Campus Life</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="dining.html">Dining</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light py-4">
+    <div class="container">
+      <h1 class="mb-3">Campus Events</h1>
+      <p class="mb-0">This page lists upcoming events and includes a placeholder API integration using Giphy.</p>
+    </div>
+  </header>
+
+  <main class="container my-4">
+    <section class="mb-4">
+      <h2 class="h4">Upcoming Events (Placeholder)</h2>
+      <ul>
+        <li>Welcome Week Concert – Friday 7pm</li>
+        <li>Hackathon – Saturday 10am</li>
+        <li>Open Mic Night – Sunday 6pm</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h4">Event GIF Search (API Placeholder)</h2>
+      <p class="small text-muted">Below is a simple Giphy search as a stand‑in for future event‑related API data.</p>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <input type="text" id="gif-search-input" class="form-control" placeholder="Search for event GIFs (e.g., music, sports)">
+        </div>
+        <div class="col-md-3 mt-2 mt-md-0">
+          <button id="gif-search-btn" class="btn btn-primary w-100">Fetch GIFs</button>
+        </div>
+      </div>
+
+      <div id="gif-results" class="row">
+        <!-- GIFs rendered by script.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Campus Life Super App</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
